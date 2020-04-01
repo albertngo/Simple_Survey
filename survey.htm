@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Simple Survey" content="A survey to test speed of CSS">
+    <title>MY SIMPLE SURVEY</title>
+    <link rel="stylesheet" href="style/style.css">
+
+
+<body>
+
+    <header>
+        <h1>Simple Survey Form</h1>
+        <p>Thanks for giving us feedback about our services!</p>
+    </header>
+
+    <main class="survey">
+        <div class="survey__item">
+            <p class="survey__item--desc">Name</p>
+            <input type = "text"
+            id = "myName"/>
+        </div>
+        <div class="survey__item">
+            <p class="survey__item--desc">Email</p>
+            <input type = "email"
+            id = "myEmail"/>
+        </div>
+        <div class="survey__item">
+            <p class="survey__item--desc">Age <span>(optional)</span></p>
+            <input type = "number"
+            id = "myEmail"/>
+        </div>
+
+        <div class="survey__item">
+            <p class="survey__item--desc">Current Role</span></p>
+            <select id="myRole">
+                <option value="Mechanical Engineer">Mechanical Engineer</option>
+                <option value="Front-End Developer">Front-End Developer</option>
+                <option value="Back-End Developer">Back-End Developer</option>
+                <option value="Full-Stack Developer">Full-Stack Developer</option>
+                <option value="Dev-Ops">Dev-Ops</option>
+                <option value="Other">Other</option>
+              </select>
+        </div>
+
+        <div class="survey__item">
+            <p class="survey__item--desc">Would you recommend us?</span></p>
+            <input type="checkbox" id="checkbox1" name="check1" value="Definitly">
+            <label for="vehicle1">Definitly</label><br>
+            <input type="checkbox" id="checkbox2" name="check2" value="Maybe">
+            <label for="vehicle1">Maybe</label><br>
+            <input type="checkbox" id="checkbox3" name="check3" value="Not Sure">
+            <label for="vehicle1">Not Sure</label><br>
+        </div>
+
+        <div class="survey__item">
+            <p class="survey__item--desc">Suggestions?</p>
+            <input type = "text"
+            id = "suggest"/>
+
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>
+
+
