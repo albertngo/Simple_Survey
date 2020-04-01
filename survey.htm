@@ -7,10 +7,10 @@
     <meta name="Simple Survey" content="A survey to test speed of CSS">
     <title>MY SIMPLE SURVEY</title>
     <link rel="stylesheet" href="style/style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
 
 <body>
-
+    <div class="tint-overlay"></div>
     <header>
         <h1>Simple Survey Form</h1>
         <p>Thanks for giving us feedback about our services!</p>
@@ -20,22 +20,22 @@
         <div class="survey__item">
             <p class="survey__item--desc">Name</p>
             <input type = "text"
-            id = "myName"/>
+            id = "myName" class="input"/>
         </div>
         <div class="survey__item">
             <p class="survey__item--desc">Email</p>
             <input type = "email"
-            id = "myEmail"/>
+            id = "myEmail" class="input"/>
         </div>
         <div class="survey__item">
             <p class="survey__item--desc">Age <span>(optional)</span></p>
             <input type = "number"
-            id = "myEmail"/>
+            id = "myEmail" class="input"/>
         </div>
 
         <div class="survey__item">
             <p class="survey__item--desc">Current Role</span></p>
-            <select id="myRole">
+            <select id="myRole " class="input">
                 <option value="Mechanical Engineer">Mechanical Engineer</option>
                 <option value="Front-End Developer">Front-End Developer</option>
                 <option value="Back-End Developer">Back-End Developer</option>
@@ -45,7 +45,7 @@
               </select>
         </div>
 
-        <div class="survey__item">
+        <div class="survey__item checkbox">
             <p class="survey__item--desc">Would you recommend us?</span></p>
             <input type="checkbox" id="checkbox1" name="check1" value="Definitly">
             <label for="vehicle1">Definitly</label><br>
@@ -57,14 +57,16 @@
 
         <div class="survey__item">
             <p class="survey__item--desc">Suggestions?</p>
-            <input type = "text"
-            id = "suggest"/>
+            <textarea name="paragraph_text" id="suggest" cols="auto" rows="10"></textarea>
 
         </div>
-
+        
+        
 
     </main>
-
+ 
+    <button>SUBMIT</button>
+    
 
 </body>
 
